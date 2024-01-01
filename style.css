@@ -135,7 +135,7 @@ input[type="submit"]:hover {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 45%);
   animation: moveCircle 25s linear infinite;
   transition-timing-function: ease-in-out;
 }
