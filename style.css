@@ -126,9 +126,64 @@ input[type="submit"]:hover {
 .background-circles {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 52%;
+  width: 100%;
+  height: 100%;
   z-index: -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
+  /* Additional circles */
+  .circle:nth-child(6) {
+    top: 100px;
+    left: 700px;
+    animation-duration: 21s;
+  }
+
+  .circle:nth-child(7) {
+    top: 500px;
+    left: 400px;
+    animation-duration: 27s;
+  }
+
+  .circle:nth-child(8) {
+    top: 250px;
+    left: 100px;
+    animation-duration: 23s;
+  }
+
+  .circle:nth-child(9) {
+    top: 700px;
+    left: 650px;
+    animation-duration: 19s;
+  }
+
+  .circle:nth-child(10) {
+    top: 450px;
+    left: 350px;
+    animation-duration: 25s;
+  }
+
+  /* Add more circles */
+  .circle:nth-child(11) {
+    top: 150px;
+    left: 550px;
+    animation-duration: 22s;
+  }
+
+  .circle:nth-child(12) {
+    top: 300px;
+    left: 200px;
+    animation-duration: 20s;
+  }
+
+  .circle:nth-child(13) {
+    top: 550px;
+    left: 750px;
+    animation-duration: 24s;
+  }
 
 .circle {
   position: absolute;
