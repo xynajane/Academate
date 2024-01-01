@@ -76,7 +76,18 @@ img.logo {
   background: white;
   padding: 0 5px;
 }
-
+/*For show/hide password */
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: url('assets/images/show.png') no-repeat center center; /* Replace with your icon */
+  background-size: contain;
+}
 /* Submit button */
 input[type="submit"] {
   width: 100%;
