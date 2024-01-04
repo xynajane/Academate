@@ -29,7 +29,7 @@ img.logo {
 
 /* Centered login container */
 .center {
-  width: 90%; /*for smaller screens */
+  width: 90%; 
   max-width: 400px; 
   background: #cccccc7d;
   border-radius: 15px;
@@ -41,8 +41,8 @@ img.logo {
 
 @media only screen and (max-width: 600px) {
   .center {
-    width: 100%; /* Adjust the width for smaller screens to fit the screen */
-    max-width: none; /* Remove the maximum width on smaller screens */
+    width: 100%; 
+    max-width: none; 
   }
 }
 
@@ -93,7 +93,7 @@ img.logo {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  background: url('assets/images/show.png') no-repeat center center; /* Replace with your icon */
+  background: url('assets/images/show.png') no-repeat center center;
   background-size: contain;
 }
 /* Submit button */
