@@ -1,4 +1,4 @@
-/* Reset styles and global styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -29,12 +29,21 @@ img.logo {
 
 /* Centered login container */
 .center {
-  width: 350px;
+  width: 90%; /*for smaller screens */
+  max-width: 400px; 
   background: #cccccc7d;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
   text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .center {
+    width: 100%; /* Adjust the width for smaller screens to fit the screen */
+    max-width: none; /* Remove the maximum width on smaller screens */
+  }
 }
 
 /* Login header */
@@ -122,7 +131,7 @@ input[type="submit"]:hover {
   text-decoration: underline;
 }
 
-/* Additional styling for background circles */
+/*Background circles */
 .background-circles {
   position: fixed;
   top: 0;
@@ -166,7 +175,6 @@ input[type="submit"]:hover {
     animation-duration: 25s;
   }
 
-  /* Add more circles */
   .circle:nth-child(11) {
     top: 150px;
     left: 550px;
