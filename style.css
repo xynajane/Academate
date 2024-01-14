@@ -320,8 +320,8 @@ p {
 }
 
 .para-2 a {
-  color: #49c1a2;
-  text-decoration: none;
+  color: #344a72;
+  text-decoration: underline;
 }
 
 /* Media Queries for mobile responsiveness */
