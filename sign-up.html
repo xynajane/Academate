@@ -8,7 +8,7 @@
         rel="stylesheet"
       />
     </head>
-    <body>
+    <body class="sign-up">
       <div class="signup-box">
         <h1>Sign Up</h1>
         <h4>It's free! Come and join us.</h4>
@@ -33,5 +33,29 @@
       <p class="para-2">
         Already have an account? <a href="index.html">Login here</a>
       </p>
+      
+    <script>
+      function validateForm() {
+        var firstName = document.getElementById('firstName').value;
+        var lastName = document.getElementById('lastName').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+
+        if (
+          firstName === '' ||
+          lastName === '' ||
+          email === '' ||
+          password === '' ||
+          confirmPassword === ''
+        ) {
+          alert('Please fill in all fields');
+        } else if (password !== confirmPassword) {
+          alert('Passwords do not match');
+        } else {
+          alert('Form submitted successfully');
+        }
+      }
+    </script>
     </body>
   </html></span>

@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Log-in Page</title>
     <link rel="stylesheet" href="style.css">
     <!-- Favicons -->
-    <link  href="assets/images/favicon.png" rel="icon">
-  </head>
+    <link href="assets/images/favicon.png" rel="icon">
+</head>
 
-  <body>
+<body class="Log-in">
     <div class="background-circles">
-      <div class="circle" style="top: 200px; left: 200px;"></div>
-      <div class="circle" style="top: 50px; left: 50px;"></div>
-      <div class="circle" style="top: 400px; left: 800px;"></div>
-      <div class="circle" style="top: 600px; left: 300px;"></div>
-      <div class="circle" style="top: 350px; left: 600px;"></div>
-      <!-- Add more circles -->
-      <div class="circle" style="top: 100px; left: 700px;"></div>
-      <div class="circle" style="top: 500px; left: 400px;"></div>
-      <div class="circle" style="top: 250px; left: 100px;"></div>
-      <div class="circle" style="top: 700px; left: 650px;"></div>
-      <div class="circle" style="top: 450px; left: 350px;"></div>
-      <!-- Add more circles -->
-      <div class="circle" style="top: 150px; left: 550px;"></div>
-      <div class="circle" style="top: 300px; left: 200px;"></div>
-      <div class="circle" style="top: 550px; left: 750px;"></div>
+        <div class="circle" style="top: 200px; left: 200px;"></div>
+        <div class="circle" style="top: 50px; left: 50px;"></div>
+        <div class="circle" style="top: 400px; left: 800px;"></div>
+        <div class="circle" style="top: 600px; left: 300px;"></div>
+        <div class="circle" style="top: 350px; left: 600px;"></div>
+        <!-- Add more circles -->
+        <div class="circle" style="top: 100px; left: 700px;"></div>
+        <div class="circle" style="top: 500px; left: 400px;"></div>
+        <div class="circle" style="top: 250px; left: 100px;"></div>
+        <div class="circle" style="top: 700px; left: 650px;"></div>
+        <div class="circle" style="top: 450px; left: 350px;"></div>
+        <!-- Add more circles -->
+        <div class="circle" style="top: 150px; left: 550px;"></div>
+        <div class="circle" style="top: 300px; left: 200px;"></div>
+        <div class="circle" style="top: 550px; left: 750px;"></div>
     </div>
     <div class="center">
-      <img src="assets/images/logo.png" alt="logo" class="logo">
-      <h1>Login</h1>
-      <form method="post">
-        <div class="txt_field">
-          <input type="text" required>
-          <label>Username</label>
-        </div>
-        <div class="txt_field">
-          <input type="password" id="passwordField" required>
-          <span class="toggle-password" onclick="togglePasswordVisibility()"></span>
-          <label>Password</label>
-        </div>
-        <input type="submit" value="Login">
-        <div class="signup_link">
-          Don't have an account? <a href="sign-up.html">Signup</a>
-        </div>
-      </form>
+        <img src="assets/images/logo.png" alt="logo" class="logo">
+        <h1>Login</h1>
+        <form method="post" action="web-pages/about me.html">
+            <div class="txt_field">
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="passwordField" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()"></span>
+                <label>Password</label>
+            </div>
+            <input type="submit" value="Login">
+            <div class="signup_link">
+                Don't have an account? <a href="sign-up.html">Signup</a>
+            </div>
+        </form>
     </div>
     <script>
-      function togglePasswordVisibility() {
-        const passwordField = document.getElementById('passwordField');
-        const fieldType = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
-        passwordField.setAttribute('type', fieldType);
-      }
+        function togglePasswordVisibility() {
+            const passwordField = document.getElementById('passwordField');
+            const fieldType = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', fieldType);
+        }
     </script>
-  </body>
+</body>
+
 </html>
